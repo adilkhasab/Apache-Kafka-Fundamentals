@@ -8,6 +8,6 @@ public class OrderConsumer {
 
     @KafkaListener(topics = "order.created", groupId = "order-group")
     public void consume(String message) {
-        System.out.println("📩 Received Order Event: " + message);
+        System.out.println("Received Order Event: " + message);
     }
 }
